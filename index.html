@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poker Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Poker Tracker (10max対応)</h1>
+    <!-- ハンド開始ボタン -->
+    <button class="next-hand" onclick="incrementHands()">Next Hand</button>
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Action</th>
+          <th>VPIP</th>
+          <th>PFR</th>
+          <th>Hands</th>
+        </tr>
+      </thead>
+      <tbody id="player-table">
+        <!-- プレイヤー行がここに動的に生成される -->
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

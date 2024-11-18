@@ -1,0 +1,149 @@
+/* 全体デザイン */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 700px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #F39C12;
+  }
+  
+  /* テーブルデザイン */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #34495E;
+    word-wrap: break-word;
+    font-size: 14px;
+  }
+  
+  th {
+    background-color: #34495E;
+  }
+  
+  td {
+    font-size: 14px;
+  }
+  
+  /* 列幅の調整 */
+  th:nth-child(1), td:nth-child(1) {
+    width: 10%; /* No列を狭く設定 */
+  }
+  
+  th:nth-child(2), td:nth-child(2) {
+    width: 40%; /* Action列を広く設定 */
+  }
+  
+  th:nth-child(3), td:nth-child(3),
+  th:nth-child(4), td:nth-child(4),
+  th:nth-child(5), td:nth-child(5) {
+    width: 16.6%; /* VPIP, PFR, Hands列を均等に */
+  }
+  
+  /* ボタンデザイン */
+  button {
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 90%; /* ボタン幅を調整して折り返しを防止 */
+    border: none;
+    border-radius: 5px;
+    margin: 5px auto;
+    display: block; /* ボタンを中央揃え */
+  }
+  
+  /* RAISEボタン */
+  button.raise {
+    background-color: #E74C3C;
+    color: white;
+  }
+  
+  button.raise:hover {
+    background-color: #C0392B;
+  }
+  
+  /* CALLボタン */
+  button.call {
+    background-color: #3498DB;
+    color: white;
+  }
+  
+  button.call:hover {
+    background-color: #2980B9;
+  }
+  
+  /* Next Handボタン */
+  button.next-hand {
+    background-color: #1ABC9C;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.next-hand:hover {
+    background-color: #16A085;
+  }
+  
+  /* スマホ対応（レスポンシブ） */
+  @media (max-width: 768px) {
+    table {
+      font-size: 12px;
+    }
+  
+    th, td {
+      padding: 8px;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    table {
+      font-size: 10px;
+    }
+  
+    button {
+      font-size: 10px;
+      padding: 8px;
+    }
+  
+    td {
+      padding: 6px;
+    }
+  }
+  
