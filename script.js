@@ -54,6 +54,17 @@ const playerData = Array.from({ length: 10 }, (_, i) => ({
     renderTable();
   }
   
+  // カウントを初期化
+  function resetCounts() {
+    playerData.forEach(player => {
+      player.raise = 0;
+      player.call = 0;
+      player.vpipHands = 0;
+      player.hands = 0;
+    });
+    renderTable(); // 初期化後に再描画
+  }
+  
   // 初期描画
   renderTable();
   
